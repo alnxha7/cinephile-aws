@@ -17,7 +17,7 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                dir('cinephile/cinephile/cinephile_project') {
+                dir('cinephile_project') {
                     sh 'docker build -t $IMAGE_NAME .'
                 }
             }
